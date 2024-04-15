@@ -4,13 +4,13 @@ import ProtectedRoutes from "./ProtectedRoutes";
 
 function AllRoutes() {
     return (
-        <main>
+        <section>
             <Routes>
                 <Route path="/" element={<HomePage />}/>
                 <Route path="create" element={ <ProtectedRoutes><CreatePost /></ProtectedRoutes> }/>
                 <Route path="*" element={<PageNotFound />}/>
             </Routes>
-        </main>
+        </section>
     )
 }
 
